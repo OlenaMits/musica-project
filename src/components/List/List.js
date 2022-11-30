@@ -20,7 +20,7 @@ const List = ({ children }) => {
         return(
             <Container>
                 <Button 
-                    backgroundColor={type === LIST_TYPE_TABLE ? "#aedaa6" : "#83a77c"}  
+                    backgroundColor={type === LIST_TYPE_TABLE ? "#83a77c" : "#aedaa6"}  
                     text={type === LIST_TYPE_TABLE ? "Table" :"List"} 
                     onClick={() => {
                         handleChangeType(type === LIST_TYPE_TABLE ? LIST_TYPE_LIST : LIST_TYPE_TABLE)
