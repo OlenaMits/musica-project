@@ -3,6 +3,7 @@ import { StyledEngineProvider } from '@mui/material/styles';
 import { Routes, Route } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
+import ListProvider from "./context/listContext";
 import LocalStorage from "./services/localStorageService";
 import { getGoods } from "./store/actions/goodsActions";
 
@@ -32,29 +33,31 @@ const App = () => {
  
   return(
     <StyledEngineProvider injectFirst>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Layout/>
-        }>
-          <Route 
-            index 
+      <ListProvider>
+        <Routes>
+          <Route
+            path="/"
             element={
-              <HomePage/>
-          }/>
-          <Route 
-            path="favorite" 
-            element={
-              <FavoritesPage/>
-          }/>
-          <Route 
-            path="cart" 
-            element={
-              <CartPage/>
-          }/>
-        </Route>
-      </Routes>
+              <Layout/>
+          }>
+            <Route 
+              index 
+              element={
+                <HomePage/>
+            }/>
+            <Route 
+              path="favorite" 
+              element={
+                <FavoritesPage/>
+            }/>
+            <Route 
+              path="cart" 
+              element={
+                <CartPage/>
+            }/>
+          </Route>
+        </Routes>
+      </ListProvider>
     </StyledEngineProvider>
   )
 }

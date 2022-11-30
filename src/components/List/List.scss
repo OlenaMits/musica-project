@@ -16,3 +16,19 @@
         padding: 30px;
     }
 }
+
+.list-column {
+    grid-template-columns: 1fr;
+}
+
+.btn-toggle {
+    width: 70px;
+    height: 31px;
+    margin-left: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import PropTypes from 'prop-types';
 import { ReactComponent as Favorite } from './images/star.svg';
@@ -9,6 +9,8 @@ import { openModal, closeModal } from "../../store/actions/modalActions";
 
 import Button from "../Button/Button";
 import Modal from "../Modal/Modal";
+import { ListContext } from "../../context/listContext";
+import { LIST_TYPE_TABLE } from "../../helpers/constants";
 
 import "./Card.scss"
 
@@ -21,6 +23,7 @@ const Card = ({
     isFavorite, 
     isCart,
 }) => {
+    const {type} = useContext(ListContext);
     const dispatch = useDispatch();
     const isModalOpened = useSelector((state) => state.modal.isOpened);
     const currentArticulModal = useSelector((state) => state.modal.currentArticul);
@@ -50,7 +53,7 @@ const Card = ({
     };
 
     return(
-        <div className="card">
+        <div className={type === LIST_TYPE_TABLE ? "card card_list" : "card"}>
             <div 
                 className="favorite" 
                 onClick={handleClickFavorite}
@@ -63,13 +66,13 @@ const Card = ({
             <div className="photo">
                 <img src={url} alt={title}/>
             </div>
-            <div className="description">
-                <div className="title-info">
+            <div className={type === LIST_TYPE_TABLE ? "description description_list" : "description"}>
+                <div className={type === LIST_TYPE_TABLE ? "title-info title-info_list" : "title-info"}>
                     <h2 className="title">{title}</h2>
                     <h4>{color}</h4>
                 </div>
                 <p>Article: {article}</p>
-                <div className="price">
+                <div className={type === LIST_TYPE_TABLE ? "price price_list" : "price"}>
                     <h1>${price}</h1>
                     <Button 
                         backgroundColor={isCart ? "#aedaa6" :"transparent"} 
