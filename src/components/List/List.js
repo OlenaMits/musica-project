@@ -13,7 +13,7 @@ const List = ({ children }) => {
     if(children.length === 0) {
         return (
             <div className="list-text">
-                Oops... Chose your musical instrument
+                Oops... Choose your musical instrument
             </div>
         );
     } else {
