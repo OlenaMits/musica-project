@@ -1,0 +1,72 @@
+[
+    {
+        "title": "acoustic guitar",
+        "price": 300,
+        "url": "./static/images/acusticguitar.jpg",
+        "articul": 324677,
+        "color": "brown"
+    },
+    {
+        "title": "bass guitar",
+        "price": 1200,
+        "url": "./static/images/bassguitar.jpeg",
+        "articul": 675366,
+        "color": "brown"
+    },
+    {
+        "title": "drumms",
+        "price": 2599,
+        "url": "./static/images/drums-blue.jpg",
+        "articul": 786343,
+        "color": "blue"
+    },
+    {
+        "title": "drumms",
+        "price": 2250,
+        "url": "./static/images/drums.jpg",
+        "articul": 786577,
+        "color": "black"
+    },
+    {
+        "title": "electric guitar",
+        "price": 1700,
+        "url": "./static/images/electroguitar.jpg",
+        "articul": 322980,
+        "color": "black"
+    },
+    {
+        "title": "harmonica",
+        "price": 79,
+        "url": "./static/images/harmonica.jpg",
+        "articul": 500273,
+        "color": "blue"
+    },
+    {
+        "title": "sintezator",
+        "price": 1599,
+        "url": "./static/images/piano-red.jpg",
+        "articul": 356748,
+        "color": "red"
+    },
+    {
+        "title": "digital piano",
+        "price": 2499,
+        "url": "./static/images/piano-white.jpg",
+        "articul": 359811,
+        "color": "white"
+    },
+    {
+        "title": "sintezator",
+        "price": 3200,
+        "url": "./static/images/sintezator.jpg",
+        "articul": 356909,
+        "color": "black"
+    },
+    {
+        "title": "uculele",
+        "price": 189,
+        "url": "./static/images/uculele.jpg",
+        "articul": 911311,
+        "color": "ocean print"
+    }
+]

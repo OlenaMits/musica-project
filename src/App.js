@@ -1,25 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { StyledEngineProvider } from '@mui/material/styles';
+import { Routes, Route } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import LocalStorage from "./services/localStorageService";
+import { getGoods } from "./store/actions/goodsActions";
+
+import Layout from "./pages/Layout";
+import HomePage from "./pages/HomePage";
+import FavoritesPage from "./pages/FavoritesPage";
+import CartPage from "./pages/CartPage";
+
+const ls = new LocalStorage();
+
+const App = () => {
+  const dispatch = useDispatch();
+  const favorites = useSelector((state) => state.favorites);
+  const cart = useSelector((state) => state.cart);
+
+  useEffect(() => {
+    dispatch(getGoods());
+  }, [dispatch])
+
+  useEffect(() => {
+    ls.set("favorites", JSON.stringify(favorites));
+  }, [favorites]);
+  
+  useEffect(() => {
+    // ls.set("cart", JSON.stringify(cart));
+  }, [cart]);
+ 
+  return(
+    <StyledEngineProvider injectFirst>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout/>
+        }>
+          <Route 
+            index 
+            element={
+              <HomePage/>
+          }/>
+          <Route 
+            path="favorite" 
+            element={
+              <FavoritesPage/>
+          }/>
+          <Route 
+            path="cart" 
+            element={
+              <CartPage/>
+          }/>
+        </Route>
+      </Routes>
+    </StyledEngineProvider>
+  )
 }
 
 export default App;
