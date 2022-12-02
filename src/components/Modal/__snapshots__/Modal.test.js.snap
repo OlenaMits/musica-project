@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal tests should match snapshot modal hide 1`] = `
+<DocumentFragment>
+  <div
+    class="modal display-none"
+    id="myModal"
+    tabindex="-1"
+  >
+    <div
+      class="modal-dialog"
+    >
+      <div
+        class="modal-content"
+        style="background-color: rgb(174, 218, 166);"
+      >
+        <div
+          class="modal-header"
+        >
+          <h5
+            class="modal-title"
+          >
+            test
+          </h5>
+          <button
+            class="btn-close"
+            type="button"
+          >
+            <svg>
+              cross.svg
+            </svg>
+          </button>
+        </div>
+        <div
+          class="modal-body"
+        >
+          <p>
+            modal hide
+          </p>
+          <div
+            class="btn-group"
+          >
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal-backdrop display-none"
+    data-testid="modal-close-btn"
+  />
+</DocumentFragment>
+`;
+
+exports[`Modal tests should match snapshot modal visible 1`] = `
+<DocumentFragment>
+  <div
+    class="modal display-block"
+    id="myModal"
+    tabindex="-1"
+  >
+    <div
+      class="modal-dialog"
+    >
+      <div
+        class="modal-content"
+        style="background-color: rgb(174, 218, 166);"
+      >
+        <div
+          class="modal-header"
+        >
+          <h5
+            class="modal-title"
+          >
+            test
+          </h5>
+          <button
+            class="btn-close"
+            type="button"
+          >
+            <svg>
+              cross.svg
+            </svg>
+          </button>
+        </div>
+        <div
+          class="modal-body"
+        >
+          <p>
+            modal visible
+          </p>
+          <div
+            class="btn-group"
+          >
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal-backdrop display-block"
+    data-testid="modal-close-btn"
+  />
+</DocumentFragment>
+`;

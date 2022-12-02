@@ -12,7 +12,7 @@ const Header = () => {
     const cart = useSelector((state) => state.cart);
 
     return(
-        <div className="header">
+        <div className="header" data-testid="app-header">
             <div className="container">
                 <div className="header-logo">
                     <Link to="/">

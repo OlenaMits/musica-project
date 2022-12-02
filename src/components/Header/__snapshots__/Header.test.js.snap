@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card tests should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="header"
+    data-testid="app-header"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="header-logo"
+      >
+        <a
+          href="/"
+        >
+          <svg>
+            musician-guitar-player.svg
+          </svg>
+          <p>
+            Musica
+          </p>
+        </a>
+      </div>
+      <div
+        class="header-btns"
+      >
+        <div
+          class="favorite"
+        >
+          <a
+            href="/favorite"
+          >
+            <svg>
+              favorite.svg
+            </svg>
+          </a>
+          <div
+            class="counter"
+          />
+        </div>
+        <div
+          class="cart"
+        >
+          <a
+            href="/cart"
+          >
+            <svg>
+              cart.svg
+            </svg>
+          </a>
+          <div
+            class="counter"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

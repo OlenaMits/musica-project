@@ -22,8 +22,9 @@ const Card = ({
     color, 
     isFavorite, 
     isCart,
+    ...restProps
 }) => {
-    const {type} = useContext(ListContext);
+    const { type } = useContext(ListContext);
     const dispatch = useDispatch();
     const isModalOpened = useSelector((state) => state.modal.isOpened);
     const currentArticulModal = useSelector((state) => state.modal.currentArticul);
@@ -53,7 +54,7 @@ const Card = ({
     };
 
     return(
-        <div className={type === LIST_TYPE_TABLE ? "card card_list" : "card"}>
+        <div className={type === LIST_TYPE_TABLE ? "card card_list" : "card"} {...restProps} >
             <div 
                 className="favorite" 
                 onClick={handleClickFavorite}

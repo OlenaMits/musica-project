@@ -42,6 +42,7 @@ const Modal = (props) => {
                 </div>
             </div>
             <div 
+            data-testid="modal-close-btn"
                 className={`modal-backdrop ${show ? "display-block" : "display-none"}`} 
                 onClick={handleClose}
             />
