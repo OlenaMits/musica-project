@@ -118,8 +118,8 @@
 .card_list {
   display: flex;
   min-width: 300px;
-  width: min-content;
-  max-width: 1000px;
+  // width: 600px;
+  width: 600px;
   align-items: center;
 
   .title-info_list {
@@ -142,5 +142,6 @@
 @media screen and (max-width: 680px) {
   .card {
     display: block;
+    width: 300px;
   }
 }
