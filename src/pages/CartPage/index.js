@@ -52,8 +52,11 @@ const CartPage = () => {
     validationSchema: validationSchema,
     onSubmit: (values) => {
       const purchased = goods.filter(({ articul }) => cart.includes(articul));
-      console.log(purchased);
-      console.log(values);
+      const order = {
+        client: values,
+        cart: purchased,
+      }
+      console.log(order);
 
       dispatch(clearCart());
     },
