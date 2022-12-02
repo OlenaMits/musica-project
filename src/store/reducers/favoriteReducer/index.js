@@ -1,5 +1,5 @@
-import { ADD_FAVORITE, REMOVE_FAVORITE } from "../../helpers/constants";
-import LocalStorage from "../../services/localStorageService";
+import { ADD_FAVORITE, REMOVE_FAVORITE } from "../../../helpers/constants";
+import LocalStorage from "../../../services/localStorageService";
 
 const ls = new LocalStorage();
 const initialState = JSON.parse(ls.get("favorites")) || [];

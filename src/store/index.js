@@ -4,7 +4,7 @@ import thunk from 'redux-thunk';
 
 import { loadState, saveState } from "../services/localStorageService"; 
 import goodsReducer from "./reducers/goodsReducer";
-import favoritesReducer from "./reducers/favoritesReducer";
+import favoritesReducer from "./reducers/favoriteReducer";
 import cartReducer from "./reducers/cartReducer";
 import modalReducer from "./reducers/modalReducer";
 

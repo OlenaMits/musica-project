@@ -1,4 +1,4 @@
-import { OPEN_MODAL, CLOSE_MODAL } from "../../helpers/constants";
+import { OPEN_MODAL, CLOSE_MODAL } from "../../../helpers/constants";
 
 const initialState = {
     currentArticul: null,

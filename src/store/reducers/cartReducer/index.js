@@ -1,4 +1,4 @@
-import { ADD_CART, REMOVE_CART, CLEAR_CART } from "../../helpers/constants";
+import { ADD_CART, REMOVE_CART, CLEAR_CART } from "../../../helpers/constants";
 
 const reducer = (state = [], action) => {
     const { payload } = action;

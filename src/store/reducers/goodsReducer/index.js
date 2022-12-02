@@ -1,4 +1,4 @@
-import { SET_GOODS } from "../../helpers/constants";
+import { SET_GOODS } from "../../../helpers/constants";
 
 const initialState = [];
 
