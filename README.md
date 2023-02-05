@@ -4,9 +4,7 @@ Project "Musica"
 
 ## Description
 
-Project based on React. 
-
-The task was to create an online store with goods, where client could add goods to the shopping cart or favorite cart. Create a contact form for the order and the list of goods.
+React SPA. An online store with goods, where client can add goods to the shopping cart or favorite cart, fill a contact form for the order and the list of goods.
 
 ## Setup
 
