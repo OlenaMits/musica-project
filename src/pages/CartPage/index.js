@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { TextField } from '@mui/material';
+import { useNavigate } from "react-router-dom";
 
 import List from "../../components/List/List";
 import Card from "../../components/Card/Card";
@@ -40,6 +41,7 @@ const CartPage = () => {
   const cart = useSelector((state) => state.cart);
   
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const formik = useFormik({
     initialValues: {
@@ -59,6 +61,7 @@ const CartPage = () => {
       console.log(order);
 
       dispatch(clearCart());
+      navigate("/order-confirmation");
     },
   });
 

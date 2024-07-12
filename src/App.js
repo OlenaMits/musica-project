@@ -11,6 +11,7 @@ import Layout from "./pages/Layout";
 import HomePage from "./pages/HomePage";
 import FavoritesPage from "./pages/FavoritesPage";
 import CartPage from "./pages/CartPage";
+import OrderConfirmation from "./pages/OrderConfirmation";
 
 const ls = new LocalStorage();
 
@@ -54,6 +55,11 @@ const App = () => {
               path="cart" 
               element={
                 <CartPage/>
+            }/>
+            <Route
+              path="order-confirmation"
+              element={
+                <OrderConfirmation/>
             }/>
           </Route>
         </Routes>
