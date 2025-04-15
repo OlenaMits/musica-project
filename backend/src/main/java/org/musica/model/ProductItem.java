@@ -6,13 +6,26 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "catalogs")
-public class CatalogItem {
+@Document(collection = "products")
+public class ProductItem {
 
     @Id
     private String id;
-    private String name;
+
+    private String title;
+
+
+    private String catalogId;
+
+    private double price;
+    private String url;
+    private int articul;
+    private String color;
+
+    private LocalDateTime createdAt;
 }

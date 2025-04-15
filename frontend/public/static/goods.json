@@ -1,72 +1,92 @@
 [
     {
         "title": "acoustic guitar",
+        "catalogId": { "$oid": "67febd738a8d0bd7ebd1674b" },
         "price": 300,
         "url": "./static/images/acusticguitar.jpg",
         "articul": 324677,
-        "color": "brown"
+        "color": "brown",
+        "createdAt": { "$date": { "$numberLong": "1713192000000" } }
     },
     {
         "title": "bass guitar",
+        "catalogId": { "$oid": "67febd738a8d0bd7ebd1674b" },
         "price": 1200,
         "url": "./static/images/bassguitar.jpeg",
         "articul": 675366,
-        "color": "brown"
+        "color": "brown",
+        "createdAt": { "$date": { "$numberLong": "1713192000000" } }
     },
     {
         "title": "drumms",
+        "catalogId": { "$oid": "67febd738a8d0bd7ebd1674a" },
         "price": 2599,
         "url": "./static/images/drums-blue.jpg",
         "articul": 786343,
-        "color": "blue"
+        "color": "blue",
+        "createdAt": { "$date": { "$numberLong": "1713192000000" } }
     },
     {
         "title": "drumms",
+        "catalogId": { "$oid": "67febd738a8d0bd7ebd1674a" },
         "price": 2250,
         "url": "./static/images/drums.jpg",
         "articul": 786577,
-        "color": "black"
+        "color": "black",
+        "createdAt": { "$date": { "$numberLong": "1713192000000" } }
     },
     {
         "title": "electric guitar",
+        "catalogId": { "$oid": "67febd738a8d0bd7ebd1674b" },
         "price": 1700,
         "url": "./static/images/electroguitar.jpg",
         "articul": 322980,
-        "color": "black"
+        "color": "black",
+        "createdAt": { "$date": { "$numberLong": "1713192000000" } }
     },
     {
         "title": "harmonica",
+        "catalogId": { "$oid": "67febd738a8d0bd7ebd1674d" },
         "price": 79,
         "url": "./static/images/harmonica.jpg",
         "articul": 500273,
-        "color": "blue"
+        "color": "blue",
+        "createdAt": { "$date": { "$numberLong": "1713192000000" } }
     },
     {
         "title": "sintezator",
+        "catalogId": { "$oid": "67febd738a8d0bd7ebd1674c" },
         "price": 1599,
         "url": "./static/images/piano-red.jpg",
         "articul": 356748,
-        "color": "red"
+        "color": "red",
+        "createdAt": { "$date": { "$numberLong": "1713192000000" } }
     },
     {
         "title": "digital piano",
+        "catalogId": { "$oid": "67febd738a8d0bd7ebd1674c" },
         "price": 2499,
         "url": "./static/images/piano-white.jpg",
         "articul": 359811,
-        "color": "white"
+        "color": "white",
+        "createdAt": { "$date": { "$numberLong": "1713192000000" } }
     },
     {
         "title": "sintezator",
+        "catalogId": { "$oid": "67febd738a8d0bd7ebd1674c" },
         "price": 3200,
         "url": "./static/images/sintezator.jpg",
         "articul": 356909,
-        "color": "black"
+        "color": "black",
+        "createdAt": { "$date": { "$numberLong": "1713192000000" } }
     },
     {
         "title": "uculele",
+        "catalogId": { "$oid": "67febd738a8d0bd7ebd1674b" },
         "price": 189,
         "url": "./static/images/uculele.jpg",
         "articul": 911311,
-        "color": "ocean print"
+        "color": "ocean print",
+        "createdAt": { "$date": { "$numberLong": "1713192000000" } }
     }
 ]
