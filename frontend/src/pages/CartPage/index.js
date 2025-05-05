@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useFormik } from 'formik';
@@ -7,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 import List from "../../components/List/List";
 import Card from "../../components/Card/Card";
-import { StyledBox, StyledButton } from "./CartPage.styles";
+import { StyledBox, StyledButton, ActionBox } from "./CartPage.styles";
 import { clearCart } from "../../store/actions/cartActions";
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -165,6 +166,16 @@ const CartPage = () => {
           }
         }, [])}
       </List>
+      <ActionBox>
+        <StyledButton
+          text="Continue shopping"
+          onClick={() => navigate('/')}
+        />
+        <StyledButton
+          text="Payment"
+          onClick={() => navigate('/payment')}
+        />
+      </ActionBox>
     </>
   )
 };

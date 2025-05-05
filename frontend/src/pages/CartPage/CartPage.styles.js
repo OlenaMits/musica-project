@@ -17,3 +17,10 @@ export const StyledBox = styled(Box)`
 export const StyledButton = styled(Button)`
     width: 250px;
 `;
+
+export const ActionBox = styled(Box)`
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+`;

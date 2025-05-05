@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useEffect } from "react";
 import { StyledEngineProvider } from '@mui/material/styles';
 import { Routes, Route } from "react-router-dom";
@@ -12,6 +13,7 @@ import HomePage from "./pages/HomePage";
 import FavoritesPage from "./pages/FavoritesPage";
 import CartPage from "./pages/CartPage";
 import OrderConfirmation from "./pages/OrderConfirmation";
+import CheckoutPage from "./pages/CheckoutPage/iindex";
 
 const ls = new LocalStorage();
 
@@ -55,6 +57,11 @@ const App = () => {
               path="cart" 
               element={
                 <CartPage/>
+            }/>
+            <Route 
+              path="payment" 
+              element={
+                <CheckoutPage/>
             }/>
             <Route
               path="order-confirmation"
