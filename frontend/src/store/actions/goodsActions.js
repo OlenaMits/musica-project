@@ -7,6 +7,7 @@ export const setGoods = (payload) => ({
 });
 
 export const getGoods = () => async dispatch => {
-    const response = await sendRequest("http://localhost:3000/static/goods.json");
+    // const response = await sendRequest("http://localhost:3000/static/goods.json");
+    const response = await sendRequest("http://localhost:8080/products");
     dispatch(setGoods(response));
 };

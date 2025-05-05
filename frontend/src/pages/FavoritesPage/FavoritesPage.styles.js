@@ -1,8 +1,6 @@
 import styled from '@emotion/styled';
 import { Box } from '@mui/material';
 
-import Button from '../../components/Button/Button';
-
 export const StyledBox = styled(Box)`
     width: 60%;
     margin: 24px 16px; 
@@ -12,8 +10,4 @@ export const StyledBox = styled(Box)`
     align-items: center;
     justify-content: center;
     padding-left: 20%;
-`;
-
-export const StyledButton = styled(Button)`
-    width: 250px;
 `;

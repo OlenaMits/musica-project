@@ -135,6 +135,9 @@ const CartPage = () => {
           />
         </StyledBox>
       )}
+      <StyledBox>
+        <h1>Your cart</h1>
+      </StyledBox>
       <List>
         {goods.reduce((result, item) => {
           const { 
