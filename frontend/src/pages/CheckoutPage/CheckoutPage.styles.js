@@ -69,3 +69,11 @@ export const FormBox = styled(Box)`
     width: 100%;
     gap: 10px;
 `
+
+export const ActionBox = styled(Box)`
+	width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+`;

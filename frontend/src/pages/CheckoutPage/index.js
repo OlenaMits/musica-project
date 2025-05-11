@@ -8,7 +8,7 @@ import * as yup from 'yup';
 import { TextField, MenuItem, Select, Container, Link } from '@mui/material';
 import { clearCart } from "../../store/actions/cartActions";
 
-import { StyledBox, StyledButton, PaymentWrapper, Title, CardsWrapper, FormBox } from "./CheckoutPage.styles";
+import { StyledBox, StyledButton, PaymentWrapper, Title, CardsWrapper, FormBox, ActionBox } from "./CheckoutPage.styles";
 import SVG from "./SVG/SVG";
 import SVGPayPall from "./SVG/SVGPayPall";
 import SVGMaestro from "./SVG/SVGMaestro";
@@ -294,12 +294,20 @@ const CheckoutPage = () => {
             </Link>
           </div>
 			  </PaymentWrapper>
-        <StyledButton 
-          backgroundColor="#aedaa6"
-          text="Complite order"
-          onClick={formik.handleSubmit}
-          type="button"
-        />
+        <ActionBox>
+          <StyledButton 
+            backgroundColor="#aedaa6"
+            text="Edit cart"
+            onClick={() => navigate('/cart')}
+            type="button"
+          />
+          <StyledButton 
+            backgroundColor="#aedaa6"
+            text="Complite order"
+            onClick={formik.handleSubmit}
+            type="button"
+          />
+        </ActionBox>
       </StyledBox>
     </>
   )

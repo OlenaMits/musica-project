@@ -30,16 +30,16 @@ const CartPage = () => {
           } = item;
           if(cart && cart.includes(articul)) {
               return [...result, (
-                  <Card 
-                      key={articul}
-                      title={title} 
-                      color={color} 
-                      price={price} 
-                      article={articul} 
-                      url={url}
-                      isFavorite={favorites.includes(articul)}
-                      isCart={cart.includes(articul)}
-                  />
+                <Card 
+                    key={articul}
+                    title={title} 
+                    color={color} 
+                    price={price} 
+                    article={articul} 
+                    url={url}
+                    isFavorite={favorites.includes(articul)}
+                    isCart={cart.includes(articul)}
+                />
               )]
           } else {
               return result;
