@@ -13,7 +13,7 @@ import HomePage from "./pages/HomePage";
 import FavoritesPage from "./pages/FavoritesPage";
 import CartPage from "./pages/CartPage";
 import OrderConfirmation from "./pages/OrderConfirmation";
-import CheckoutPage from "./pages/CheckoutPage/iindex";
+import CheckoutPage from "./pages/CheckoutPage/index";
 
 const ls = new LocalStorage();
 
