@@ -6,14 +6,17 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "catalogs")
-public class CatalogItem {
+//@Document(collection = "carts")
+public class CartItem {
 
     @Id
     private String id;
-    private String name;
+    private List<ProductItem> cartProducts = new ArrayList<>();
 
 }

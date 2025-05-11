@@ -19,7 +19,7 @@ public class ProductItem {
 
     private String title;
 
-
+// need manually to have this catalogIg from "/catalogs"
     private String catalogId;
 
     private double price;

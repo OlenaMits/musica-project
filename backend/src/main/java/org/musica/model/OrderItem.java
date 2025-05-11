@@ -9,11 +9,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "catalogs")
-public class CatalogItem {
+//@Document(collection = "orders")
+public class OrderItem {
 
     @Id
     private String id;
-    private String name;
+    private CartItem cart;
+    private ShippingItem shippingDetails;
 
 }
